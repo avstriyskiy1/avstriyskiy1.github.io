@@ -1,0 +1,8 @@
+[{
+      "relation": ["delegate_permission/common.handle_all_urls"],
+      "target": {
+        "namespace": "android_app",
+        "package_name": "Avstriyskiy.pyaterka",
+        "sha256_cert_fingerprints": ["1E:C6:AF:E4:1B:8C:D1:35:9E:BB:FC:3F:C0:A8:1F:36:2C:BB:CB:BA:61:8B:B0:6E:3D:ED:29:40:C5:D2:1A:FE"]
+      }
+    }]
