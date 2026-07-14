@@ -1,8 +1,34 @@
-[{
-      "relation": ["delegate_permission/common.handle_all_urls"],
-      "target": {
-        "namespace": "android_app",
-        "package_name": "Avstriyskiy.pyaterka",
-        "sha256_cert_fingerprints": ["1E:C6:AF:E4:1B:8C:D1:35:9E:BB:FC:3F:C0:A8:1F:36:2C:BB:CB:BA:61:8B:B0:6E:3D:ED:29:40:C5:D2:1A:FE"]
-      }
-    }]
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "Avstriyskiy.pyaterka",
+      "sha256_cert_fingerprints": ["1E:C6:AF:E4:1B:8C:D1:35:9E:BB:FC:3F:C0:A8:1F:36:2C:BB:CB:BA:61:8B:B0:6E:3D:ED:29:40:C5:D2:1A:FE"]
+    }
+  },
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "Avstriyskiy.peremena",
+      "sha256_cert_fingerprints": ["AB:D1:74:30:14:92:A9:EA:8C:AC:BB:47:7E:CE:B1:ED:8B:8A:92:5B:38:FB:0B:85:1D:76:DF:97:DE:47:A1:30"]
+    }
+  },
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "Avstriyskiy.stipuha",
+      "sha256_cert_fingerprints": ["4F:BF:DE:42:4A:DC:02:76:B4:A3:2C:70:C5:FD:3B:DB:ED:AC:90:9A:A8:45:FD:19:62:E6:9D:6F:04:29:5F:E3"]
+    }
+  },
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "io.github.avstriyskiy1.twa",
+      "sha256_cert_fingerprints": ["49:D4:9F:12:5F:8B:9B:98:CA:72:28:A7:49:9B:A3:92:A0:64:CD:88:52:4F:2D:0B:4A:95:D8:D0:FC:57:CF:A5"]
+    }
+  }
+]
