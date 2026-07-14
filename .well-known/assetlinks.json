@@ -27,8 +27,8 @@
     "relation": ["delegate_permission/common.handle_all_urls"],
     "target": {
       "namespace": "android_app",
-      "package_name": "io.github.avstriyskiy1.twa",
-      "sha256_cert_fingerprints": ["49:D4:9F:12:5F:8B:9B:98:CA:72:28:A7:49:9B:A3:92:A0:64:CD:88:52:4F:2D:0B:4A:95:D8:D0:FC:57:CF:A5"]
+      "package_name": "Avstriyskiy.yavka",
+      "sha256_cert_fingerprints": ["E2:4D:D7:5B:2A:B0:26:95:FC:86:35:62:A5:68:1E:E1:23:4F:D8:8E:F1:48:7E:32:B6:11:97:3B:1B:0A:E2:5F"]
     }
   }
 ]
