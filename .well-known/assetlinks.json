@@ -30,5 +30,13 @@
       "package_name": "Avstriyskiy.yavka",
       "sha256_cert_fingerprints": ["E2:4D:D7:5B:2A:B0:26:95:FC:86:35:62:A5:68:1E:E1:23:4F:D8:8E:F1:48:7E:32:B6:11:97:3B:1B:0A:E2:5F"]
     }
+  },
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "Avstriyskiy.shkala",
+      "sha256_cert_fingerprints": ["9B:E1:4A:62:45:46:D3:F3:36:63:3F:C5:12:AA:8F:0D:41:17:4D:71:A4:63:BB:EC:BD:FF:2E:41:12:E1:7B:FC"]
+    }
   }
 ]
