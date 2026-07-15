@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>Другие наши приложения</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#FAFAF7;
+    --card:#FFFFFF;
+    --ink:#1B2430;
+    --ink-soft:#5B6472;
+    --muted:#9AA1AB;
+    --red:#C0392B;
+    --red-dim:#C0392B1a;
+    --grid:#E7E9ED;
+    --radius:7px;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:var(--paper);
+    background-image:
+      linear-gradient(var(--grid) 1px, transparent 1px),
+      linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+    background-size:26px 26px;
+    color:var(--ink);
+    font-family:'Inter',sans-serif;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    padding:40px 16px 60px;
+  }
+  .wrap{ width:100%; max-width:560px; }
+
+  header{ text-align:center; margin-bottom:34px; padding:0 12px; }
+  header h1{
+    font-family:'PT Serif',serif; font-weight:700; font-size:1.9rem; margin:0 0 10px;
+    letter-spacing:-0.01em; position:relative; display:inline-block;
+  }
+  header h1::after{
+    content:""; position:absolute; left:2px; right:2px; bottom:4px; height:9px;
+    background:var(--red-dim); z-index:-1; transform:skewX(-6deg);
+  }
+  header p{ color:var(--ink-soft); font-size:0.95rem; line-height:1.5; margin:0; }
+
+  .grid{ display:flex; flex-direction:column; gap:14px; }
+
+  .app-card{
+    display:flex; align-items:center; gap:16px;
+    background:var(--card); border:1px solid var(--grid); border-radius:var(--radius);
+    padding:16px 18px; text-decoration:none; color:inherit;
+    transition:border-color .15s ease, transform .1s ease;
+  }
+  .app-card:hover{ border-color:var(--red); }
+  .app-card:active{ transform:scale(0.99); }
+  .app-card.disabled{ opacity:0.55; pointer-events:none; }
+
+  .app-icon{
+    width:56px; height:56px; border-radius:14px; flex-shrink:0;
+    border:1px solid var(--grid);
+  }
+
+  .app-info{ flex:1; min-width:0; }
+  .app-name{ font-family:'PT Serif',serif; font-weight:700; font-size:1.15rem; color:var(--ink); margin:0 0 3px; }
+  .app-tagline{ font-size:0.86rem; color:var(--ink-soft); line-height:1.35; margin:0; }
+
+  .app-arrow{ color:var(--muted); font-size:1.3rem; flex-shrink:0; }
+  .app-card:hover .app-arrow{ color:var(--red); }
+
+  .soon-badge{
+    font-family:'JetBrains Mono',monospace; font-size:0.72rem; font-weight:700;
+    color:var(--muted); background:var(--grid); padding:4px 9px; border-radius:20px;
+    flex-shrink:0; text-transform:uppercase; letter-spacing:.03em;
+  }
+
+  .rustore-badge{
+    font-family:'JetBrains Mono',monospace; font-size:0.68rem; font-weight:700;
+    color:var(--red); background:var(--red-dim); padding:3px 8px; border-radius:12px;
+    display:inline-block; margin-top:4px;
+  }
+
+  footer{ text-align:center; color:var(--muted); font-size:0.78rem; margin-top:34px; padding:0 12px; line-height:1.6; }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <header>
+    <h1>Другие наши приложения</h1>
+    <p>Бесплатно, без рекламы, доступны в RuStore.</p>
+  </header>
+
+  <div class="grid">
+
+    <a class="app-card" href="https://www.rustore.ru/catalog/app/Avstriyskiy.pyaterka">
+      <img class="app-icon" src="icons/pyaterka.png" alt="">
+      <div class="app-info">
+        <p class="app-name">Пятёрка</p>
+        <p class="app-tagline">Калькулятор оценок — средний балл и средневзвешенный</p>
+      </div>
+      <span class="app-arrow">→</span>
+    </a>
+
+    <a class="app-card" href="https://www.rustore.ru/catalog/app/Avstriyskiy.peremena">
+      <img class="app-icon" src="icons/peremena.png" alt="">
+      <div class="app-info">
+        <p class="app-name">Перемена</p>
+        <p class="app-tagline">Расписание звонков на неделю с обратным отсчётом</p>
+      </div>
+      <span class="app-arrow">→</span>
+    </a>
+
+    <a class="app-card" href="https://www.rustore.ru/catalog/app/Avstriyskiy.stipuha">
+      <img class="app-icon" src="icons/stipuha.png" alt="">
+      <div class="app-info">
+        <p class="app-name">Стипуха</p>
+        <p class="app-tagline">Калькулятор стипендии по оценкам за сессию</p>
+      </div>
+      <span class="app-arrow">→</span>
+    </a>
+
+    <a class="app-card" href="https://www.rustore.ru/catalog/app/Avstriyskiy.yavka">
+      <img class="app-icon" src="icons/yavka.png" alt="">
+      <div class="app-info">
+        <p class="app-name">Явка</p>
+        <p class="app-tagline">Трекер посещаемости с настраиваемым порогом допуска</p>
+      </div>
+      <span class="app-arrow">→</span>
+    </a>
+
+    <a class="app-card" href="https://www.rustore.ru/catalog/app/Avstriyskiy.shkala">
+      <img class="app-icon" src="icons/shkala.png" alt="">
+      <div class="app-info">
+        <p class="app-name">Шкала</p>
+        <p class="app-tagline">Конвертер оценок: 5-балльная, 100-балльная, ECTS</p>
+      </div>
+      <span class="app-arrow">→</span>
+    </a>
+
+    <a class="app-card" href="https://www.rustore.ru/catalog/app/Avstriyskiy.otcheot">
+      <img class="app-icon" src="icons/otcheot.png" alt="">
+      <div class="app-info">
+        <p class="app-name">Отсчёт</p>
+        <p class="app-tagline">Таймер обратного отсчёта до ЕГЭ, каникул, любого дня</p>
+      </div>
+      <span class="app-arrow">→</span>
+    </a>
+
+  </div>
+
+  <footer>
+    Некоторые приложения могут ещё проходить модерацию в RuStore —<br>
+    если карточка пока не открывается, загляни чуть позже.
+  </footer>
+
+</div>
+
+</body>
+</html>
