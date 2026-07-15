@@ -38,5 +38,13 @@
       "package_name": "Avstriyskiy.shkala",
       "sha256_cert_fingerprints": ["9B:E1:4A:62:45:46:D3:F3:36:63:3F:C5:12:AA:8F:0D:41:17:4D:71:A4:63:BB:EC:BD:FF:2E:41:12:E1:7B:FC"]
     }
+  },
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "Avstriyskiy.otcheot",
+      "sha256_cert_fingerprints": ["65:DA:FA:2D:93:6A:F7:7E:01:C4:BB:2C:2E:51:AD:2F:15:EA:B6:58:F8:2F:8F:B1:8B:FF:E1:8A:B0:81:8B:7D"]
+    }
   }
 ]
